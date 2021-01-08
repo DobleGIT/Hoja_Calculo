@@ -1,2 +1,2 @@
 # Hoja_Calculo
-Este programa es capaz de generar graficas a partir de una coleccion de puntos que tu introduces
+Para saber el funcionamiento del programa lee el archivo pdf.
