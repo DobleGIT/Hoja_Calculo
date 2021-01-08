@@ -1,0 +1,32 @@
+﻿<Window x:Class="ProyectoFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal"
+        mc:Ignorable="d"
+        Title="La Principal" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <DockPanel DockPanel.Dock="Top" Height="20" Grid.Row="0">
+            <MenuItem Header="Hojas" Click="Abrir_las_hojas" Width="393"/>
+            <MenuItem Header="Borrar" Click="Borrar_Grafica" />
+            
+  
+        </DockPanel>
+
+
+        <Canvas Name="ElCanvas" Grid.Row="1" SizeChanged="ElCanvas_Size_Changed" MouseLeftButtonDown="ElCanvas_MouseLeftButtonDown" Background="Transparent" MouseMove="ElCanvas_MouseMove" MouseUp="ElCanvas_MouseUp" MouseRightButtonDown="ElCanvas_MouseRightButtonDown" >
+            <Rectangle
+                x:Name="areaSeleccionada"
+                Visibility="Collapsed"
+                Stroke="Black"
+                StrokeThickness="1"
+                />
+        </Canvas>
+    </Grid>
+</Window>
